@@ -12,6 +12,7 @@
     <img
         :src="pokemon.sprites.front_default"
         :alt="pokemon.name"
+        style="min-height: 96px"
         class="pokemon-image border-black"
     />
     <h2 class="pb-4 text-xl font-bold capitalize">{{ pokemon.name }}</h2>
