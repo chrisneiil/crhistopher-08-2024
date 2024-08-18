@@ -5,8 +5,8 @@
         Maximo 6 integrantes.</h2>
     </div>
     <div v-else>
-      <h2 class="pl-2 text-3xl font-bold " >Equipo Pokemon  {{pokemonCount}}/6:</h2>
-      <p class="pl-2 text-xl">Click en el pokemon para eliminar de la lista.</p>
+      <h2 class="pl-2 text-3xl font-bold " >Equipo Pokémon  {{pokemonCount}}/6:</h2>
+      <p class="pl-2 text-xl">Click en el Pokémon para eliminar de la lista.</p>
     </div>
     <div
         class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-9 gap-4 bg-gray-800 border-blue-500 border-4 py-4 px-4 my-4"
@@ -16,7 +16,7 @@
         <PokemonCardComponent @pokemon-selected="removePokemonFromStore(index)" :pokemon="pokemon"/>
       </div>
     </div>
-    <h2 class="text-3xl font-bold pl-2 py-2">Pokemones disponibles:</h2>
+    <h2 class="text-3xl font-bold pl-2 py-2">Pokémones disponibles:</h2>
     <div
         v-if="!loadingListPokemonDetails"
         style="border-radius: 15px; min-height: 550px"
